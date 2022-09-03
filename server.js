@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Mount routers
-app.use('/api/v1/user', usersRoutes);
+app.use('/user', usersRoutes);
 
 app.get('/', (req, res) => {
   // res.send('Hello World');
